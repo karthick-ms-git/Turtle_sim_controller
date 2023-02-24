@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-    <arg name="node_start_delay" default="3.0" />
-	<node name="turtlesim" pkg="turtlesim" type="turtlesim_node" respawn="false" output="screen"/>
-	<node name="puppet_master" pkg="take_home_test" type="puppet_master_node" respawn="false" output="screen" launch-prefix="gnome-terminal -e"/>
-    <node name="take_home_test" pkg="take_home_test" type="take_home_test_node" respawn="false" output="screen" launch-prefix="gnome-terminal -e"/>
-
-</launch>
